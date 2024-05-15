@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct VideoGame{
+char * title;
+char platform[20];
+int releaseYear;
+int isMultiplayer;
+};
+
+int main()
+{
+
+    struct VideoGame G2 = {"Minecraft", "PC", 2011, 1};
+    struct VideoGame G1 = {"Metal Gear Rising: Revengeance", "PC", 2014, 0};
+
+    printf("%s %s %d %d\n", G1.title, G1.platform, G1.releaseYear, G1.isMultiplayer);
+    printf("%s %s %d %d\n", G2.title, G2.platform, G2.releaseYear, G2.isMultiplayer);
+    return 0;
+}
